@@ -33,19 +33,26 @@ public class PhysicsPointer : MonoBehaviour
                 lineRendererEnd = hit.point;
 
                 Debug.DrawLine(transform.position, hit.point, Color.red);
+
+                lineRenderer.enabled = true;
+                lineRenderer.SetPosition(0,transform.position);
+                lineRenderer.SetPosition(1, lineRendererEnd);
+
             } else{ 
                 hitTarget = null;
-                lineRendererEnd = transform.position + (transform.forward*defaultRayLength);
+                // lineRendererEnd = transform.position + (transform.forward*defaultRayLength);
+                lineRenderer.enabled = false;
+
             }
         }
 
-        if(GameObject.Find("Fractal9").GetComponent<Renderer>().isVisible){
-            lineRenderer.enabled = true;
-            lineRenderer.SetPosition(0,transform.position);
-            lineRenderer.SetPosition(1, lineRendererEnd);
-        } else {
-            lineRenderer.enabled = false;
-        }
+        // if(GameObject.Find("Fractal9").GetComponent<Renderer>().isVisible){
+        //     lineRenderer.enabled = true;
+        //     lineRenderer.SetPosition(0,transform.position);
+        //     lineRenderer.SetPosition(1, lineRendererEnd);
+        // } else {
+        //     lineRenderer.enabled = false;
+        // }
     }
 
 }
