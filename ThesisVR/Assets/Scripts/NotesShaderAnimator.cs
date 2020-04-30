@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class NotesShaderAnimator : MonoBehaviour
 {
-    public float hSliderValue = 0.0F;
+    public float textureOffset = 0.0F;
     public float audioPos;
     private Material material;
     private AudioSource audioSource;
@@ -25,11 +25,8 @@ public class NotesShaderAnimator : MonoBehaviour
     {
         audioPos = audioSource.time;
         // hSliderValue = map(audioPos, 0, audioSource.clip.length,0.0F, 1.0F);
-        hSliderValue = map(audioPos, 0, audioSource.clip.length, 0.0F, -0.98F);
-        material.SetTextureOffset("_BaseMap", new Vector2(hSliderValue, 0));
+        textureOffset = map(audioPos, 0, audioSource.clip.length, 0.0F, -0.98F);
+        material.SetTextureOffset("_BaseMap", new Vector2(textureOffset, 0));
     }
 
-        private void OnGUI() {
-        hSliderValue = GUI.HorizontalSlider(new Rect(25, 25, 100, 30), hSliderValue, 0.0F, 2.0F);
-    }
 }

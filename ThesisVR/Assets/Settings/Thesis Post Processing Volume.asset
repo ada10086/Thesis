@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
   m_Name: Vignette
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0, b: 0.64744806, a: 1}
+    m_Value: {r: 0.019090425, g: 0.074729174, b: 0.3679245, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -25,12 +25,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.748
+    m_Value: 0.575
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.308
+    m_Value: 0.445
     min: 0.01
     max: 1
   rounded:
@@ -51,6 +51,7 @@ MonoBehaviour:
   components:
   - {fileID: 3614093442898534162}
   - {fileID: -3280824561307513303}
+  - {fileID: 6093978784641420451}
 --- !u!114 &3614093442898534162
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -75,7 +76,7 @@ MonoBehaviour:
     min: 0
   scatter:
     m_OverrideState: 1
-    m_Value: 0.73
+    m_Value: 0.354
     min: 0
     max: 1
   clamp:
@@ -84,7 +85,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 0.17541835, b: 0, a: 1}
+    m_Value: {r: 0.58717513, g: 0.8584906, b: 0.8558857, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -98,3 +99,41 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: 0
     min: 0
+--- !u!114 &6093978784641420451
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  postExposure:
+    m_OverrideState: 1
+    m_Value: -1.33
+  contrast:
+    m_OverrideState: 1
+    m_Value: 0
+    min: -100
+    max: 100
+  colorFilter:
+    m_OverrideState: 1
+    m_Value: {r: 0.8066038, g: 0.9720906, b: 1, a: 1}
+    hdr: 1
+    showAlpha: 0
+    showEyeDropper: 1
+  hueShift:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -180
+    max: 180
+  saturation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: -100
+    max: 100
