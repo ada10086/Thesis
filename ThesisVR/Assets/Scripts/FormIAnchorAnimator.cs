@@ -27,9 +27,13 @@ public class FormIAnchorAnimator : MonoBehaviour
         this.transform.localEulerAngles = new Vector3(formIAnchorXRotation,0,0);
 
         if(audioSource.time <= audioSource.clip.length*0.5){
-            formIAnchorZPosition = map(audioSource.time, 0, audioSource.clip.length*0.5F, -2F, -6F);
+            // formIAnchorZPosition = map(audioSource.time, 0, audioSource.clip.length*0.5F, -2F, -6F);
+            formIAnchorZPosition = map(audioSource.time, 0, audioSource.clip.length*0.5F, 2F, -2F);
+
         } else {
-            formIAnchorZPosition = map(audioSource.time, audioSource.clip.length*0.5F, audioSource.clip.length, -6F, -2F);
+            // formIAnchorZPosition = map(audioSource.time, audioSource.clip.length*0.5F, audioSource.clip.length, -6F, -2F);
+            formIAnchorZPosition = map(audioSource.time, audioSource.clip.length*0.5F, audioSource.clip.length, -2F, 2F);
+
         }
         this.transform.localPosition = new Vector3(5F,5F,formIAnchorZPosition);
     }

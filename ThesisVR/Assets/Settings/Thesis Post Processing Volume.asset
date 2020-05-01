@@ -25,12 +25,12 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.575
+    m_Value: 0.712
     min: 0
     max: 1
   smoothness:
     m_OverrideState: 1
-    m_Value: 0.445
+    m_Value: 1
     min: 0.01
     max: 1
   rounded:
@@ -85,7 +85,7 @@ MonoBehaviour:
     min: 0
   tint:
     m_OverrideState: 1
-    m_Value: {r: 0.58717513, g: 0.8584906, b: 0.8558857, a: 1}
+    m_Value: {r: 0.73700607, g: 0.9245283, b: 0.92271096, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
@@ -123,7 +123,7 @@ MonoBehaviour:
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.8066038, g: 0.9720906, b: 1, a: 1}
+    m_Value: {r: 0.3448736, g: 0.45358032, b: 0.4716981, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
