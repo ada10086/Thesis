@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   color:
     m_OverrideState: 1
-    m_Value: {r: 0.019090425, g: 0.074729174, b: 0.3679245, a: 1}
+    m_Value: {r: 0.061320752, g: 0.09025863, b: 0.24528301, a: 1}
     hdr: 0
     showAlpha: 0
     showEyeDropper: 1
@@ -25,7 +25,7 @@ MonoBehaviour:
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
-    m_Value: 0.712
+    m_Value: 0.748
     min: 0
     max: 1
   smoothness:
@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d7fd9488000d3734a9e00ee676215985, type: 3}
-  m_Name: Thesis Post Processing Volume
+  m_Name: Post Processing Volume Room 3
   m_EditorClassIdentifier: 
   components:
   - {fileID: 3614093442898534162}
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
   m_Name: ColorAdjustments
   m_EditorClassIdentifier: 
-  active: 0
+  active: 1
   m_AdvancedMode: 0
   postExposure:
     m_OverrideState: 1
@@ -123,7 +123,7 @@ MonoBehaviour:
     max: 100
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 0.3448736, g: 0.45358032, b: 0.4716981, a: 1}
+    m_Value: {r: 0.9430348, g: 0.7606554, b: 0.8799034, a: 1}
     hdr: 1
     showAlpha: 0
     showEyeDropper: 1
