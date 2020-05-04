@@ -8,7 +8,7 @@ public class startFormIAudioForCamAnimation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioSource = GameObject.Find("FormI new new").GetComponent<AudioSource>();
+        audioSource = GameObject.Find("Mobius Strip").GetComponent<AudioSource>();
         
     }
 

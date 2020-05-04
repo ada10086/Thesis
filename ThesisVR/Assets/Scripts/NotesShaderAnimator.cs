@@ -16,7 +16,7 @@ public class NotesShaderAnimator : MonoBehaviour
     void Start()
     {
         material = GetComponent<MeshRenderer>().material;
-        audioSource = GameObject.Find("FormI new new").GetComponent<AudioSource>();
+        audioSource = GameObject.Find("Mobius Strip").GetComponent<AudioSource>();
         // Debug.Log("names" + material.GetTexturePropertyNames(List<string> outNames));
     }
 
